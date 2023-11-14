@@ -29,8 +29,8 @@
     "url": "git+https://github.com/excid3/uppy-activestorage-upload.git"
   },
   "devDependencies": {
-    "@rails/activestorage": "^7.0.4",
-    "@uppy/core": "^3.0.6"
+    "@rails/activestorage": "^7.1",
+    "@uppy/core": "^3.7"
   },
   "peerDependencies": {
     "@rails/activestorage": "*",
