@@ -28,19 +28,13 @@
     "type": "git",
     "url": "git+https://github.com/excid3/uppy-activestorage-upload.git"
   },
-  "devDependencies": {
-    "@rails/activestorage": "^7.1",
-    "@uppy/core": "^3.7"
-  },
-  "peerDependencies": {
-    "@rails/activestorage": "*",
-    "@uppy/core": "*"
-  },
   "publishConfig": {
     "@excid3:registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "@paralleldrive/cuid2": "^2.2.0",
-    "np": "^7.6.3"
+    "np": "^7.6.3",
+    "@rails/activestorage": "^7.2",
+    "@uppy/core": "^4.1"
   }
 }
