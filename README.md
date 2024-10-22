@@ -7,6 +7,7 @@ The ActiveStorage Upload plugin handles Ruby on Rails ActiveStorage direct uploa
 ## Example
 
 Add this line to your HEAD tag.
+
 ```erb
 <%= tag.meta name: "direct-upload-url", content: rails_direct_uploads_path %>
 ```
@@ -15,7 +16,7 @@ Then use `ActiveStorageUpload` as an Uppy plugin in your Javascript pack.
 
 ```js
 import Uppy from '@uppy/core'
-import ActiveStorageUpload from '@excid3/uppy-activestorage-upload'
+import ActiveStorageUpload from '@gothassos/uppy-activestorage-upload'
 
 let uppy = new Uppy(options)
 uppy.use(ActiveStorageUpload, {
@@ -26,9 +27,9 @@ uppy.use(ActiveStorageUpload, {
 ## Installation
 
 ```bash
-yarn add @excid3/uppy-activestorage-upload
+yarn add @gothassos/uppy-activestorage-upload
 # or
-npm install @excid3/uppy-activestorage-upload --save
+npm install @gothassos/uppy-activestorage-upload --save
 ```
 
 We recommend installing from yarn and then using a module bundler such as [esbuild](https://esbuild.github.io/).

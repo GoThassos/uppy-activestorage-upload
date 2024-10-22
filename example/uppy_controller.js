@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 import Uppy from '@uppy/core'
 import Dashboard from '@uppy/dashboard'
-import ActiveStorageUpload from '@excid3/uppy-activestorage-upload'
+import ActiveStorageUpload from '@gothassos/uppy-activestorage-upload'
 
 // Example HTML for Uppy with ActiveStorage
 //

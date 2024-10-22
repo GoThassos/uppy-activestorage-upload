@@ -1,7 +1,7 @@
 {
-  "name": "@excid3/uppy-activestorage-upload",
+  "name": "@gothassos/uppy-activestorage-upload",
   "description": "Rails ActiveStorage DirectUpload engine for Uppy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "jsnext:main": "lib/index.js",
@@ -14,19 +14,30 @@
     "xhr",
     "xhr upload",
     "XMLHttpRequest",
+    "ActiveStorage",
     "ajax",
     "fetch",
     "uppy",
     "uppy-plugin"
   ],
-  "homepage": "https://github.com/excid3/uppy-activestorage-upload",
+  "homepage": "https://github.com/gothassos/uppy-activestorage-upload",
   "author": "Chris Oliver <excid3@gmail.com>",
+  "contributors": [
+    {
+      "name": "Michael Basmanov"
+    },
+    {
+      "name": "Anthony Veaudry",
+      "email": "anthony@veaudry.pro",
+      "url": "https://veaudry.pro"
+    }
+  ],
   "bugs": {
-    "url": "https://github.com/excid3/uppy-activestorage-upload/issues"
+    "url": "https://github.com/gothassos/uppy-activestorage-upload/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/excid3/uppy-activestorage-upload.git"
+    "url": "git+https://github.com/gothassos/uppy-activestorage-upload.git"
   },
   "publishConfig": {
     "@excid3:registry": "https://npm.pkg.github.com/"
