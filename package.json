@@ -1,7 +1,7 @@
 {
   "name": "@gothassos/uppy-activestorage-upload",
   "description": "Rails ActiveStorage DirectUpload engine for Uppy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "lib/index.js",
   "jsnext:main": "lib/index.js",
@@ -44,7 +44,6 @@
   },
   "dependencies": {
     "@paralleldrive/cuid2": "^2.2.0",
-    "np": "^7.6.3",
     "@rails/activestorage": "^7.2",
     "@uppy/core": "^4.1"
   },
