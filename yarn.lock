@@ -3,89 +3,13 @@
 
 
 "@noble/hashes@^1.1.5":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.4.0.tgz#45814aa329f30e4fe0ba49426f49dfccdd066426"
-  integrity sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.8.0.tgz#cee43d801fcef9644b11b8194857695acd5f815a"
+  integrity sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==
 
-"@paralleldrive/cuid2@^2.2.0":
+"@paralleldrive/cuid2@^2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@paralleldrive/cuid2/-/cuid2-2.2.2.tgz#7f91364d53b89e2c9cb9e02e8dd0f129e834455f"
   integrity sha512-ZOBkgDwEdoYVlSeRbYYXs0S9MejQofiVYoTbKzy/6GQa39/q5tQU2IX46+shYnUkpEl3wc+J6wRlar7r2EK2xA==
   dependencies:
     "@noble/hashes" "^1.1.5"
-
-"@rails/activestorage@^7.2":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-7.2.0.tgz#bc03b52a687ba2bb9d2e6381f25795cda037494e"
-  integrity sha512-jXK9tKDZn/j+ZeJuFdrtyrLNLWjzYRyp+mejWTfSp+egAp1okXsdfFNe8jqqgwcP8gytqJSPwo0sZwQVdQpuIA==
-  dependencies:
-    spark-md5 "^3.0.1"
-
-"@transloadit/prettier-bytes@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@transloadit/prettier-bytes/-/prettier-bytes-0.3.4.tgz#51f837a49cab10a42ef64d6f227d1a859ba435aa"
-  integrity sha512-8/SnIF9Q2k52mbjRVAYLranwkaDTLb+O9r4Z/uo8uNw//SjygKvvbF4BHSOuReufaAyum1q13602VcNud25Dfg==
-
-"@uppy/core@^4.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@uppy/core/-/core-4.1.1.tgz#b010023478d2132aa0180a05f9ea48a9801cbe1e"
-  integrity sha512-/O69Gjsudj2d+J+ptHsmITuLu8sRXh1QJ4i4i1bL8f/VLbGSXBzeX6G/DNlTTn62/KJNp85BuSTvIo/zbAB4KA==
-  dependencies:
-    "@transloadit/prettier-bytes" "^0.3.4"
-    "@uppy/store-default" "^4.1.0"
-    "@uppy/utils" "^6.0.2"
-    lodash "^4.17.21"
-    mime-match "^1.0.2"
-    namespace-emitter "^2.0.1"
-    nanoid "^5.0.0"
-    preact "^10.5.13"
-
-"@uppy/store-default@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@uppy/store-default/-/store-default-4.1.0.tgz#0e5deddfeb2204a670f08fbe05a0895fe9d5222a"
-  integrity sha512-z5VSc4PNXpAtrrUPg5hdKJO5Ul7u4ZYLyK+tYzvEgzgR4nLVZmpGzj/d4N90jXpUqEibWKXvevODEB5VlTLHzg==
-
-"@uppy/utils@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@uppy/utils/-/utils-6.0.2.tgz#fc5e86fa58e952fb075ca4bc0523fb5e6aa44053"
-  integrity sha512-ZoNeAa1YTKSlcvXe1SP3POjzjRZ9jSojorbst03vwd1Ks9vHPGf6pne61DowTXHZ3HMj1vpcIaQ1VIEWeeADlA==
-  dependencies:
-    lodash "^4.17.21"
-    preact "^10.5.13"
-
-lodash@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
-
-mime-match@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/mime-match/-/mime-match-1.0.2.tgz#3f87c31e9af1a5fd485fb9db134428b23bbb7ba8"
-  integrity sha512-VXp/ugGDVh3eCLOBCiHZMYWQaTNUHv2IJrut+yXA6+JbLPXHglHwfS/5A5L0ll+jkCY7fIzRJcH6OIunF+c6Cg==
-  dependencies:
-    wildcard "^1.1.0"
-
-namespace-emitter@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/namespace-emitter/-/namespace-emitter-2.0.1.tgz#978d51361c61313b4e6b8cf6f3853d08dfa2b17c"
-  integrity sha512-N/sMKHniSDJBjfrkbS/tpkPj4RAbvW3mr8UAzvlMHyun93XEm83IAvhWtJVHo+RHn/oO8Job5YN4b+wRjSVp5g==
-
-nanoid@^5.0.0:
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.0.7.tgz#6452e8c5a816861fd9d2b898399f7e5fd6944cc6"
-  integrity sha512-oLxFY2gd2IqnjcYyOXD8XGCftpGtZP2AbHbOkthDkvRywH5ayNtPVy9YlOPcHckXzbLTCHpkb7FB+yuxKV13pQ==
-
-preact@^10.5.13:
-  version "10.23.2"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.23.2.tgz#52deec92796ae0f0cc6b034d9c66e0fbc1b837dc"
-  integrity sha512-kKYfePf9rzKnxOAKDpsWhg/ysrHPqT+yQ7UW4JjdnqjFIeNUnNcEJvhuA8fDenxAGWzUqtd51DfVg7xp/8T9NA==
-
-spark-md5@^3.0.1:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.2.tgz#7952c4a30784347abcee73268e473b9c0167e3fc"
-  integrity sha512-wcFzz9cDfbuqe0FZzfi2or1sgyIrsDwmPwfZC4hiNidPdPINjeUwNfv5kldczoEAcjl9Y1L3SM7Uz2PUEQzxQw==
-
-wildcard@^1.1.0:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/wildcard/-/wildcard-1.1.2.tgz#a7020453084d8cd2efe70ba9d3696263de1710a5"
-  integrity sha512-DXukZJxpHA8LuotRwL0pP1+rS6CS7FF2qStDDE1C7DDg2rLud2PXRMuEDYIPhgEezwnlHNL4c+N6MfMTjCGTng==
