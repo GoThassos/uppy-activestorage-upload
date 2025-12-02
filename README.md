@@ -2,7 +2,7 @@
 
 <img src="https://uppy.io/img/logo.svg" width="120" alt="Uppy logo: a smiling puppy above a pink upwards arrow" align="right">
 
-The ActiveStorage Upload plugin handles Ruby on Rails ActiveStorage direct uploads with Uppy.
+The ActiveStorage Upload plugin handles Ruby on Rails ActiveStorage direct uploads with Uppy.<br><br><br>
 
 ## Example
 
