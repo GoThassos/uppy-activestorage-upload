@@ -40,7 +40,8 @@
     "url": "git+https://github.com/gothassos/uppy-activestorage-upload.git"
   },
   "publishConfig": {
-    "@excid3:registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "dependencies": {
     "@paralleldrive/cuid2": "^2.2.2"
