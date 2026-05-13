@@ -11,6 +11,7 @@ Add this line to your HEAD tag.
 ```erb
 <%= tag.meta name: "direct-upload-url", content: rails_direct_uploads_path %>
 ```
+In a Rails API environment you can get the aforementioned value with `Rails.application.routes.url_helpers.rails_direct_uploads_path`, it's usually something like `"/rails/active_storage/direct_uploads"`. Add a full URL for `directUploadUrl` later, if necessary.
 
 Then use `ActiveStorageUpload` as an Uppy plugin in your Javascript pack.
 
