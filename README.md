@@ -35,6 +35,13 @@ npm install @gothassos/uppy-activestorage-upload --save
 
 We recommend installing from yarn and then using a module bundler such as [esbuild](https://esbuild.github.io/).
 
+### Requirements
+
+| This plugin | Uppy |
+| ----------- | ---- |
+| `3.x`       | `@uppy/core` v6 |
+| `2.x`       | `@uppy/core` v5 |
+
 ## License
 
 [The MIT License](./LICENSE).

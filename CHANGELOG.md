@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.0.0] - 2026-08-31
+
+- Adds support for uppy version 6
+- **Breaking:** requires `@uppy/core` v6. `RateLimitedQueue` is now imported from
+  `@uppy/core/utils`, since uppy v6 merged `@uppy/utils` into `@uppy/core`. That
+  subpath does not exist in v5, so stay on 2.x for uppy v5.
+- Updates the TypeScript declarations, which referenced `Plugin` and
+  `PluginOptions` — exports that exist in neither v5 nor v6 — typed `limit` as a
+  string and declared a `bundle` option the plugin never had.
+
 ## [2.1.0] - 2026-08-31
 
 The last release supporting uppy v5. See 3.0.0 for uppy v6.

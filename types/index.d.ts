@@ -1,17 +1,22 @@
-import { Plugin, PluginOptions, Uppy } from '@uppy/core';
+import type { Body, DefinePluginOpts, Meta, PluginOpts, Uppy } from '@uppy/core';
+import { BasePlugin } from '@uppy/core';
 
-export interface ActiveStorageUploadOptions extends PluginOptions {
-  limit: string;
-  bundle: boolean;
+export interface ActiveStorageUploadOptions extends PluginOpts {
+  /** Rails direct uploads endpoint, e.g. `/rails/active_storage/direct_uploads`. */
   directUploadUrl: string;
+  /** Maximum number of simultaneous uploads. `0` disables limiting. Defaults to `0`. */
+  limit?: number;
+  /** Abort an upload if no progress is reported for this many milliseconds. Defaults to `30000`. */
+  timeout?: number;
 }
 
-export default class ActiveStorageUpload extends Plugin {
-  constructor(uppy: Uppy, opts: Partial<ActiveStorageUploadOptions>);
-}
+type Opts = DefinePluginOpts<ActiveStorageUploadOptions, 'limit' | 'timeout'>;
 
-declare module '@uppy/core' {
-  export interface Uppy {
-    use(pluginClass: typeof ActiveStorageUpload, opts: Partial<ActiveStorageUploadOptions>): Uppy;
-  }
+export default class ActiveStorageUpload<
+  M extends Meta = Meta,
+  B extends Body = Body,
+> extends BasePlugin<Opts, M, B> {
+  constructor(uppy: Uppy<M, B>, opts: ActiveStorageUploadOptions);
+  install(): void;
+  uninstall(): void;
 }
