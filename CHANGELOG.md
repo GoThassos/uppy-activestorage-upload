@@ -1,5 +1,35 @@
 # Changelog
 
+## [3.0.1] - 2026-08-31
+
+- Cancelling a file now actually stops the upload. `upload.abort()` was only ever
+  guarded with `&&` because `DirectUpload` has no such method, so `file-removed`,
+  `upload-cancel` and `cancel-all` stopped the timeout timer and let the transfer
+  run to completion. The XHR handed to `directUploadWillStoreFileWithXHR` is kept
+  and aborted instead. ActiveStorage hands that request over before calling
+  `send()` on it, where `abort()` does nothing, so an abort that arrives during
+  the blob-record request is deferred until the transfer is in flight. The
+  blob-record request itself is not reachable and still completes, so an
+  unattached blob can be left behind for `ActiveStorage::Blob.unattached` cleanup
+  to purge.
+- The upload promise now settles when an upload is aborted. ActiveStorage
+  registers only `load` and `error` on that request, and an abort fires neither,
+  so its callback never ran: `uppy.upload()` stayed pending forever and `complete`
+  never fired. The plugin listens for `abort` itself and settles there.
+- Fixes `Can't set state for <file id> (the file could have been removed)`, an
+  uncaught error thrown when an upload called back for a file uppy no longer
+  held. The callback now returns quietly for a cancelled or removed file rather
+  than calling `setFileState` on it, and emits neither `upload-success` nor
+  `upload-error` for it.
+- The `file-removed`, `upload-cancel` and `cancel-all` listeners registered for
+  each upload are now removed once that upload settles, on every path including
+  timeouts, instead of one set per file accumulating on the uppy instance for as
+  long as it lives.
+- Fixes `TypeError: self.i18n is not a function`, thrown by every upload timeout.
+  `BasePlugin` only initialises `i18n` from `setOptions()`, which this plugin
+  never calls, so the timeout could not even build its own error message. The
+  timeout now aborts the transfer and reports `upload-error` as intended.
+
 ## [3.0.0] - 2026-08-31
 
 - Adds support for uppy version 6
