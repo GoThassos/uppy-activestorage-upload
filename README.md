@@ -41,6 +41,10 @@ We recommend installing from yarn and then using a module bundler such as [esbui
 | ----------- | ---- |
 | `3.x`       | `@uppy/core` v6 |
 | `2.x`       | `@uppy/core` v5 |
+| `1.x`       | `@uppy/core` v4 |
+
+`2.0.0` is the one exception: it shipped with a stale `@uppy/core: ^4.4.4`
+peer range, corrected in `2.0.1`. On uppy v5, pin `^2.0.1` rather than `^2.0.0`.
 
 ## License
 
